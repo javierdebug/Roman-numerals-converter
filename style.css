@@ -1,6 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: steelblue;
+    color: #f3f3f3;
+}
+
 #container {
+    margin: 80px auto;
     display: grid;
     grid-template-columns: 50vh;
+    grid-gap: 2px;
     justify-content: center;
     align-self: stretch;
+}
+
+p{
+    margin: 15px 0;
+}
+
+#output {
+    height: 40px;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+    font-weight: bold;
+}
+
+input, button{
+    height: 40px;
+    font-size: 25px;
 }
