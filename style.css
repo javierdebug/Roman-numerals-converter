@@ -12,12 +12,18 @@ body{
 }
 
 #container {
-    margin: 80px auto;
+    margin: 5vw auto;
     display: grid;
-    grid-template-columns: 50vh;
-    grid-gap: 2px;
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    column-gap: 20px;
     justify-content: center;
     align-self: stretch;
+}
+
+.subcontainer {
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-gap: 2px;
 }
 
 p{
@@ -25,7 +31,7 @@ p{
 }
 
 #output {
-    height: 40px;
+    height: 40px;    
     text-align: center;
     word-wrap: break-word;
     color: white;
@@ -35,4 +41,23 @@ p{
 input, button{
     height: 40px;
     font-size: 25px;
+}
+
+@media (max-width: 500px) {
+    #container{
+        grid-template-columns: 50vw;
+        row-gap: 20px;
+    }
+
+    #colLeft {
+        visibility: hidden;
+    }        
+}
+
+.thousand {
+    text-decoration: overline;
+}
+
+#colLeft {
+    font-size: 20px;
 }

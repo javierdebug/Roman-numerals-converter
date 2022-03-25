@@ -10,10 +10,16 @@
 </head>
 <body>
     <div id="container">
-        <input type="text" name="number">
-        <button type="submit">Convert</button>
-        <p>The Roman numeral is:</p>
-        <div id="output"></div>
+        <div id="colRight"></div>
+        <div class="subcontainer">
+            <input type="text" name="number">
+            <button type="submit">Convert</button>
+            <p>The Roman numeral is:</p>
+            <div id="output">
+                <span class="thousand"></span><span class="rest"></span>
+            </div>
+        </div>
+        <div id="colLeft">Enter a decimal number you would like to convert to Roman. The output will show the corresponding numeral.</div>
     </div>
 
 
